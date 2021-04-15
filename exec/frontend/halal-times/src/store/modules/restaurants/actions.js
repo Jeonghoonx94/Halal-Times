@@ -85,7 +85,7 @@ export default {
         const index = restaurants.findIndex(
           restaurant => restaurant.restaurantId === restaurantId
         );
-        if (index !== null) restaurants[index].bookmarked = true;
+        if (index >= 0) restaurants[index].bookmarked = true;
       }
     }
     // console.log(payload.type, restaurants);
